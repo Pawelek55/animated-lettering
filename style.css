@@ -1,0 +1,46 @@
+body{
+    background-color:#a52a2a;
+    margin: 0;
+}
+
+.container{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+h1{
+    font-size: 100px;
+    color: #fff;
+    position: relative;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 100px;
+}
+
+.animation{
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    top: 0;
+    background:  radial-gradient(circle, rgba(165, 42, 42, 0.9) 70%, rgba(165, 42, 42, 0) 95%);
+    animation-name: animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes animation{
+    0%{
+        left: 0%;
+    }
+    
+    100%{
+        left: 66%;
+    }
+}
+
+
